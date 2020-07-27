@@ -1,16 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
+
 
 namespace BestBuyCRUDTest
 {
     public interface IProductRepository
     {
 
-        IEnumerable<Product> GetAllProducts();
+        public IEnumerable<Products> GetAllProducts();
 
-        void InsertProduct(string newProductName);
+        public Products GetProduct(int ProductID);
 
-        public void CreateProduct(string name, int price, int categoryID);
+        public void InsertProduct(string name, double price, int categoryID);
         
     }
 

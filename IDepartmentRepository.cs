@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Collections.Generic;
 
 namespace BestBuyCRUDTest
@@ -9,6 +10,8 @@ namespace BestBuyCRUDTest
         //that conforms to IEnumerable<T>
 
         IEnumerable<Department> GetAllDepartments();
+
+        void InsertDepartment(string newDepo);
     }
 
     
